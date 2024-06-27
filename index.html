@@ -1,0 +1,3129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekLand - Pasión por la tecnología</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/mediaq.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="imagenes/favicon.ico"/>
+    <script src="https://kit.fontawesome.com/567c1c99c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Inicio de cabecera -->
+    <header>
+        <div class="cabecera">
+            <a href="#" class="hamb"><i class="fa-solid fa-bars"></i></a>
+            <figure>
+                <a href="index.html"><img class="logo" src="imagenes/logo.svg" alt="logo"></a>
+            </figure>
+            <div>
+                <div>
+                    <form class="busqueda">
+                        <img class="lupa" src="imagenes/busqueda.png" alt="">
+                        <input  type="search" placeholder="Busca en GeekLand" onchange="getInputValue();">
+                    </form>
+                </div>
+                <div>
+                    <figure>
+                        <a href="https://www.apple.com/shop/buy-iphone"><button class="boton_apple" type="submit"><img src="imagenes/apple.png"></button></a>
+                    </figure>
+                    <figure class="iconos_ftc">
+                        <button type="submit">
+                            <div>
+                                <img src="imagenes/corazon_p.png">
+                                <img src="imagenes/corazon.png">
+                            </div>
+                        </button>
+                        <figcaption>
+                            Favoritos
+                        </figcaption> 
+                    </figure>
+                    <figure class="iconos_ftc">
+                        <button type="submit">
+                            <a href="paginas/nuestrastiendas.html">
+								<div>
+									<img src="imagenes/tienda_p.png">
+									<img src="imagenes/tienda.png">
+								</div>
+							</a>
+                        </button>
+                        <figcaption>
+                            Tiendas
+                        </figcaption> 
+                    </figure>
+                    <figure class="iconos_ftc">
+                        <button>
+                            <div>
+                                <img src="imagenes/carrito_compras_p.png">
+                                <img src="imagenes/carrito_compras.png">
+                            </div>
+                        </button>
+                        <figcaption>
+                            Compras
+                        </figcaption> 
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- INICIO MENU DE NAVEGACION -->
+        <!-- lista_g es la lista general , lista_p es la lista principal , vinculo_p es el vinculo principal-->
+        <nav class="menu">
+            <ul class="lista_g">
+                <li class="lista_p">
+                    <a class="vinculo_p" href="paginas/audio.html">Audio</a>
+                    <figure>
+                        <img src="imagenes/abajo_nav.png">
+                        <img src="imagenes/abajo_nav_p.png">
+                    </figure>
+                    <ul>
+                        <li><a href="../paginas/audio.html">Audifonos</a></li>
+                        <li><a href="../paginas/audio.html">Parlantes</a></li>
+                        <li><a href="../paginas/audio.html">Microfonos</a></li>
+                        <li><a href="../paginas/audio.html">Accesorios de audio</a></li>
+                        <li><a href="../paginas/audio.html">Equipos de sonido</a></li>
+                        <li><a href="../paginas/audio.html">Radios</a></li>
+                    </ul>
+                </li>
+                <li class="lista_p">
+                    <a class="vinculo_p" href="../paginas/celularesyaccesorios.html">Celulares</a>
+                    <figure>
+                        <img src="imagenes/abajo_nav.png">
+                        <img src="imagenes/abajo_nav_p.png">
+                    </figure>
+                    <ul>
+                        <li><a href="../paginas/celularesyaccesorios.html">Celulares</a></li>
+                        <li><a href="../paginas/celularesyaccesorios.html">Smart Watchs</a></li>
+                        <li><a href="../paginas/celularesyaccesorios.html">Cargadores</a></li>
+                        <li><a href="../paginas/celularesyaccesorios.html">Case y micas</a></li>
+                        <li><a href="../paginas/celularesyaccesorios.html">Soportes</a></li>
+                        <li><a href="../paginas/celularesyaccesorios.html">Cables usb</a></li>
+                    </ul>
+                </li>
+                <li class="lista_p">
+                    <a class="vinculo_p" href="paginas/smarthome.html">Smarthome</a>
+                    <figure>
+                        <img src="imagenes/abajo_nav.png">
+                        <img src="imagenes/abajo_nav_p.png">
+                    </figure>
+                    <ul>
+                        <li><a href="paginas/smarthome.html">Convertidores smart</a></li>
+                        <li><a href="paginas/smarthome.html">Parlantes inteligentes</a></li>
+                        <li><a href="paginas/smarthome.html">Camaras de seguridad</a></li>
+                        <li><a href="paginas/smarthome.html">Iluminacion smart</a></li>
+                        <li><a href="paginas/smarthome.html">Aspiradoras robot</a></li>
+                    </ul>
+                </li>
+                <li class="lista_p">
+                    <a class="vinculo_p" href="paginas/gamer.html">Gamer</a>
+                    <figure>
+                        <img src="imagenes/abajo_nav.png">
+                        <img src="imagenes/abajo_nav_p.png">
+                    </figure>
+                    <ul>
+                        <li><a href="paginas/gamer.html">Laptor Gamer</a></li>
+                        <li><a href="paginas/gamer.html">Monitores</a></li>
+                        <li><a href="paginas/gamer.html">Consolas</a></li>
+                        <li><a href="paginas/gamer.html">Realidad virtual</a></li>
+                        <li><a href="paginas/gamer.html">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li class="lista_p">
+                    <a class="vinculo_p" href="paginas/computo.html">Computo</a>
+                    <figure>
+                        <img src="imagenes/abajo_nav.png">
+                        <img src="imagenes/abajo_nav_p.png">
+                    </figure>
+                    <ul>
+                        <li><a href="paginas/computo.html">Pc de escritorio</a></li>
+                        <li><a href="paginas/computo.html">Almacenamiento</a></li>
+                        <li><a href="paginas/computo.html">Perifericos de computo</a></li>
+                        <li><a href="paginas/computo.html">Componentes para pc</a></li>
+                        <li><a href="paginas/computo.html">Impresoras</a></li>
+                        <li><a href="paginas/computo.html">Software y licencias</a></li>
+                    </ul>
+                </li>
+                <li class="lista_p">
+                    <a class="vinculo_p" href="paginas/movilidad.html">Movilidad</a>
+                    <figure>
+                        <img src="imagenes/abajo_nav.png">
+                        <img src="imagenes/abajo_nav_p.png">
+                    </figure>
+                    <ul>
+                        <li><a href="paginas/movilidad.html">Scooters electricos</a></li>
+                        <li><a href="paginas/movilidad.html">Bicicletas electricas</a></li>
+                        <li><a href="paginas/movilidad.html">Motos electricas</a></li>
+                        <li><a href="paginas/movilidad.html">Repuestos</a></li>
+                        <li><a href="paginas/movilidad.html">Gps Localizador</a></li>
+                    </ul>
+                </li>
+                <li class="lista_p">
+                    <a class="vinculo_p" href="paginas/fotografiavideo.html">Fotografía</a>
+                    <figure>
+                        <img src="imagenes/abajo_nav.png">
+                        <img src="imagenes/abajo_nav_p.png">
+                    </figure>
+                    <ul>
+                        <li><a href="paginas/fotografiavideo.html">Camaras DLSR</a></li>
+                        <li><a href="paginas/fotografiavideo.html">Camaras mirrorless</a></li>
+                        <li><a href="paginas/fotografiavideo.html">Tripoides</a></li>
+                        <li><a href="paginas/fotografiavideo.html">Estabilizadores</a></li>
+                        <li><a href="paginas/fotografiavideo.html">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li class="lista_p">
+                    <a class="vinculo_p" href="#promociones">Promociones</a>
+                </li>
+                <li class="lista_p">
+                    <a class="vinculo_p" href="#d">Contactenos</a>
+                    <figure>
+                        <img src="imagenes/abajo_nav.png">
+                        <img src="imagenes/abajo_nav_p.png">
+                    </figure>
+                    <ul>
+                        <li><a href="#">Enviar correo</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="paginas/nuestrastiendas.html">Punto de retiro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- FIN MENU DE NAVEGACION -->
+    </header><!-- Fin de cabecera -->
+    
+    <!-- Inicio del main -->
+    <main>
+        <!-- Slider Banner-->
+        <section>
+            <div class="carrousel">
+                <div class="tamano">
+                    <img src="imagenes/banner1.png" alt="Imagen 1" class="img">
+                    <img src="imagenes/banner2.png" alt="Imagen 2" class="img">
+                    <img src="imagenes/banner3.png" alt="Imagen 3" class="img">
+                    <img src="imagenes/banner4.png" alt="Imagen 4" class="img">
+                    <img src="imagenes/banner5.png" alt="Imagen 5" class="img">
+                    <img src="imagenes/banner6.png" alt="Imagen 6" class="img">
+                    <img src="imagenes/banner7.png" alt="Imagen 7" class="img">
+                </div>
+                <ul class="puntos">
+                    <li class="punto activo"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slider PRO 2-->
+        <div class="linea_h2_l_r">
+            <hr class="hr_left"><h2>Nuestras&nbsp;Categorías</h2><hr class="hr_right"> 
+        </div>
+         <!-- Slider 7 Categorias -->
+         <section id="slider2">
+            <div class="swiper mySwiper_a container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider  -->
+                    <div class="swiper-slide categoria">
+                       <div class="categoria-content">
+                            <div class="imagen" id="parlantes">
+                                <img src="imagenes/cat1.png" alt="">
+                            </div>
+
+                            <div class="name-categoria">
+                                <span class="name">Parlantes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="audio">
+                                <img src="imagenes/cat2.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Audífonos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="celulares">
+                                <img src="imagenes/cat3.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Celulares</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="laptops">
+                                <img src="imagenes/cat4.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Laptops</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="smarthome">
+                                <img src="imagenes/cat5.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Smart&nbsp;Home</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="camaras">
+                                <img src="imagenes/cat6.png" alt="">
+                            </div>
+ 
+ 
+                            <div class="name-categoria">
+                                <span class="name">Cámaras</span>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="swiper-slide categoria">
+                    <div class="categoria-content">
+                            <div class="imagen" id="gamer">
+                                <img src="imagenes/cat7.png" alt="">
+                            </div>
+ 
+ 
+                            <div class="name-categoria">
+                                <span class="name">Nintendo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                             <div class="imagen" id="parlantes">
+                                 <img src="imagenes/cat1.png" alt="">
+                             </div>
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Parlantes</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="audio">
+                                 <img src="imagenes/cat2.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Audífonos</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="celulares">
+                                 <img src="imagenes/cat3.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Celulares</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="laptops">
+                                 <img src="imagenes/cat4.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Laptops</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="smarthome">
+                                 <img src="imagenes/cat5.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Smart&nbsp;Home</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="camaras">
+                                 <img src="imagenes/cat6.png" alt="">
+                             </div>
+  
+  
+                             <div class="name-categoria">
+                                 <span class="name">Cámaras</span>
+                             </div>
+                         </div>
+                     </div>
+  
+                     <div class="swiper-slide categoria">
+                     <div class="categoria-content">
+                             <div class="imagen" id="gamer">
+                                 <img src="imagenes/cat7.png" alt="">
+                             </div>
+  
+  
+                             <div class="name-categoria">
+                                 <span class="name">Nintendo</span>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider 5 Categorias -->
+        <section id="slider2">
+            <div class="swiper mySwiper_b container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider  -->
+                    <div class="swiper-slide categoria">
+                       <div class="categoria-content">
+                            <div class="imagen" id="parlantes">
+                                <img src="imagenes/cat1.png" alt="">
+                            </div>
+
+                            <div class="name-categoria">
+                                <span class="name">Parlantes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="audio">
+                                <img src="imagenes/cat2.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Audífonos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="celulares">
+                                <img src="imagenes/cat3.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Celulares</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="laptops">
+                                <img src="imagenes/cat4.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Laptops</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="smarthome">
+                                <img src="imagenes/cat5.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Smart&nbsp;Home</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="camaras">
+                                <img src="imagenes/cat6.png" alt="">
+                            </div>
+ 
+ 
+                            <div class="name-categoria">
+                                <span class="name">Cámaras</span>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="swiper-slide categoria">
+                    <div class="categoria-content">
+                            <div class="imagen" id="gamer">
+                                <img src="imagenes/cat7.png" alt="">
+                            </div>
+ 
+ 
+                            <div class="name-categoria">
+                                <span class="name">Nintendo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                             <div class="imagen" id="parlantes">
+                                 <img src="imagenes/cat1.png" alt="">
+                             </div>
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Parlantes</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="audio">
+                                 <img src="imagenes/cat2.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Audífonos</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="celulares">
+                                 <img src="imagenes/cat3.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Celulares</span>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider 3 Categorias -->
+        <section id="slider2">
+            <div class="swiper mySwiper_c container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider  -->
+                    <div class="swiper-slide categoria">
+                       <div class="categoria-content">
+                            <div class="imagen" id="parlantes">
+                                <img src="imagenes/cat1.png" alt="">
+                            </div>
+
+                            <div class="name-categoria">
+                                <span class="name">Parlantes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="audio">
+                                <img src="imagenes/cat2.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Audífonos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="celulares">
+                                <img src="imagenes/cat3.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Celulares</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="laptops">
+                                <img src="imagenes/cat4.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Laptops</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="smarthome">
+                                <img src="imagenes/cat5.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Smart&nbsp;Home</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="camaras">
+                                <img src="imagenes/cat6.png" alt="">
+                            </div>
+ 
+ 
+                            <div class="name-categoria">
+                                <span class="name">Cámaras</span>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="swiper-slide categoria">
+                    <div class="categoria-content">
+                            <div class="imagen" id="gamer">
+                                <img src="imagenes/cat7.png" alt="">
+                            </div>
+ 
+ 
+                            <div class="name-categoria">
+                                <span class="name">Nintendo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                             <div class="imagen" id="parlantes">
+                                 <img src="imagenes/cat1.png" alt="">
+                             </div>
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Parlantes</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="audio">
+                                 <img src="imagenes/cat2.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Audífonos</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="celulares">
+                                 <img src="imagenes/cat3.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Celulares</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="laptops">
+                                 <img src="imagenes/cat4.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Laptops</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="smarthome">
+                                 <img src="imagenes/cat5.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Smart&nbsp;Home</span>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+        
+        <!-- Slider 2 Categorias -->
+        <section id="slider2">
+            <div class="swiper mySwiper_d container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider  -->
+                    <div class="swiper-slide categoria">
+                       <div class="categoria-content">
+                            <div class="imagen" id="parlantes">
+                                <img src="imagenes/cat1.png" alt="">
+                            </div>
+
+                            <div class="name-categoria">
+                                <span class="name">Parlantes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="audio">
+                                <img src="imagenes/cat2.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Audífonos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="celulares">
+                                <img src="imagenes/cat3.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Celulares</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="laptops">
+                                <img src="imagenes/cat4.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Laptops</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="smarthome">
+                                <img src="imagenes/cat5.png" alt="">
+                            </div>
+ 
+
+                            <div class="name-categoria">
+                                <span class="name">Smart&nbsp;Home</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                            <div class="imagen" id="camaras">
+                                <img src="imagenes/cat6.png" alt="">
+                            </div>
+ 
+ 
+                            <div class="name-categoria">
+                                <span class="name">Cámaras</span>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="swiper-slide categoria">
+                    <div class="categoria-content">
+                            <div class="imagen" id="gamer">
+                                <img src="imagenes/cat7.png" alt="">
+                            </div>
+ 
+ 
+                            <div class="name-categoria">
+                                <span class="name">Nintendo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                             <div class="imagen" id="parlantes">
+                                 <img src="imagenes/cat1.png" alt="">
+                             </div>
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Parlantes</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="audio">
+                                 <img src="imagenes/cat2.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Audífonos</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="celulares">
+                                 <img src="imagenes/cat3.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Celulares</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="laptops">
+                                 <img src="imagenes/cat4.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Laptops</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="smarthome">
+                                 <img src="imagenes/cat5.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Smart&nbsp;Home</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="camaras">
+                                 <img src="imagenes/cat6.png" alt="">
+                             </div>
+  
+  
+                             <div class="name-categoria">
+                                 <span class="name">Cámaras</span>
+                             </div>
+                         </div>
+                     </div>
+  
+                     <div class="swiper-slide categoria">
+                     <div class="categoria-content">
+                             <div class="imagen" id="gamer">
+                                 <img src="imagenes/cat7.png" alt="">
+                             </div>
+  
+  
+                             <div class="name-categoria">
+                                 <span class="name">Nintendo</span>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider 1 Categoria -->
+        <section id="slider2">
+            <div class="swiper mySwiper_e container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider  -->
+                    <div class="swiper-slide categoria">
+                        <div class="categoria-content">
+                             <div class="imagen" id="parlantes">
+                                 <img src="imagenes/cat1.png" alt="">
+                             </div>
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Parlantes</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="audio">
+                                 <img src="imagenes/cat2.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Audífonos</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="celulares">
+                                 <img src="imagenes/cat3.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Celulares</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="laptops">
+                                 <img src="imagenes/cat4.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Laptops</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="smarthome">
+                                 <img src="imagenes/cat5.png" alt="">
+                             </div>
+  
+ 
+                             <div class="name-categoria">
+                                 <span class="name">Smart&nbsp;Home</span>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide categoria">
+                         <div class="categoria-content">
+                             <div class="imagen" id="camaras">
+                                 <img src="imagenes/cat6.png" alt="">
+                             </div>
+  
+  
+                             <div class="name-categoria">
+                                 <span class="name">Cámaras</span>
+                             </div>
+                         </div>
+                     </div>
+  
+                     <div class="swiper-slide categoria">
+                     <div class="categoria-content">
+                             <div class="imagen" id="gamer">
+                                 <img src="imagenes/cat7.png" alt="">
+                             </div>
+  
+  
+                             <div class="name-categoria">
+                                 <span class="name">Nintendo</span>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <div class="linea_h2_l_r">
+            <hr class="hr_left"><h2>Los&nbsp;más&nbsp;vendidos</h2><hr class="hr_right"> 
+        </div>
+        <!-- Slider de 5 Productos-->
+        <section id="slider">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider  -->
+                    <div class="swiper-slide card">
+                       <div class="card-content audifonos">
+                            <div class="image">
+                                <img src="imagenes/producto1.png" alt="">
+                            </div>
+
+                            <div class="media-icons">
+                                <span>-8%</span>
+                            </div>
+
+                            <div class="name-product">
+                                <span class="name">Apple</span>
+                                <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                            </div>
+        
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                            </div>
+        
+                            <div class="button">
+                                <span class="price">S/ 1099.00</span>
+                                <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content gamer">
+                            <div class="image">
+                                <img src="imagenes/producto2.png" alt="">
+                            </div>
+
+                            <div class="media-icons">
+                                <span>-20%</span>
+                            </div>
+
+                            <div class="name-product">
+                                <span class="name">Nintendo</span>
+                                <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                            </div>
+        
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                            </div>
+        
+                            <div class="button">
+                                <span class="price">S/ 1559.00</span>
+                                <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card celulares">
+                        <div class="card-content audifonos">
+                            <div class="image">
+                                <img src="imagenes/producto3.jpeg" alt="">
+                            </div>
+
+                            <div class="media-icons">
+                                <span>-42%</span>
+                            </div>
+
+                            <div class="name-product">
+                                <span class="name">Apple</span>
+                                <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                            </div>
+        
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                            </div>
+        
+                            <div class="button">
+                                <span class="price">S/ 3179.00</span>
+                                <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content parlantes">
+                            <div class="image">
+                                <img src="imagenes/producto4.jpeg" alt="">
+                            </div>
+
+                            <div class="media-icons">
+                                <span>-39%</span>
+                            </div>
+
+                            <div class="name-product">
+                                <span class="name">Amazon</span>
+                                <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                            </div>
+        
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                            </div>
+        
+                            <div class="button">
+                                <span class="price">S/ 199.90</span>
+                                <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content laptops">
+                            <div class="image">
+                                <img src="imagenes/producto5.png" alt="">
+                            </div>
+
+                            <div class="media-icons">
+                                <span>-15%</span>
+                            </div>
+
+                            <div class="name-product">
+                                <span class="name">Asus</span>
+                                <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                            </div>
+        
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                            </div>
+        
+                            <div class="button">
+                                <span class="price">S/ 3399.00</span>
+                                <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider de 4 Productos -->
+        <section id="slider">
+            <div class="swiper mySwiper2 container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider -->
+                    <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider de 3 Productos -->
+        <section id="slider">
+            <div class="swiper mySwiper3 container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider  -->
+                    <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider de 2 Productos -->
+        <section id="slider">
+            <div class="swiper mySwiper4 container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider  -->
+                    <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider de 1 Producto -->
+        <section id="slider">
+            <div class="swiper mySwiper5 container">
+                <div class="swiper-wrapper content">
+                    <!-- Inicio de Slider  -->
+                    <div class="swiper-slide card">
+                        <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto1.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-8%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">Audífonos bluetooth True Wireless Apple Airpods Pro 2da gen. con estuche de carga tipo C MagSafe.....</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1099.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content gamer">
+                             <div class="image">
+                                 <img src="imagenes/producto2.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-20%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Nintendo</span>
+                                 <span class="product">Consola Nintendo Switch OLED, 64 GB, pantalla 7", multicolor, 2 mandos inalámbricos, VR y........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 1559.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card celulares">
+                         <div class="card-content audifonos">
+                             <div class="image">
+                                 <img src="imagenes/producto3.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-42%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Apple</span>
+                                 <span class="product">iPhone 14 128GB, 6GB ram, cámara principal 12MP + 12MP, frontal 12MP, 6.1", Grafito...........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3179.00</span>
+                                 <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content parlantes">
+                             <div class="image">
+                                 <img src="imagenes/producto4.jpeg" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-39%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Amazon</span>
+                                 <span class="product">Altavoz inteligente Amazon Echo Dot 5ta generación (2022), control de voz con Alexa, negro........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 199.90</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="swiper-slide card">
+                         <div class="card-content laptops">
+                             <div class="image">
+                                 <img src="imagenes/producto5.png" alt="">
+                             </div>
+ 
+                             <div class="media-icons">
+                                 <span>-15%</span>
+                             </div>
+ 
+                             <div class="name-product">
+                                 <span class="name">Asus</span>
+                                 <span class="product">Laptop Asus TUF Gaming Intel Core i5-12500H NVIDIA GeForce RTX 3050, DDR4 8GB/512GB PCIe 3.0 NVMe.........</span>
+                             </div>
+         
+                             <div class="rating">
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                                 <i class="fa-regular fa-star" style="color: #ffd700;"></i>
+                             </div>
+         
+                             <div class="button">
+                                 <span class="price">S/ 3399.00</span>
+                                 <i class="fa-regular fa-heart" style="color: #ff0000;"></i>
+                             </div>
+                         </div>
+                     </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Promociones -->
+        <div class="linea_h2_l_r" id="promociones">
+            <hr class="hr_left"><h2>Promociones</h2><hr class="hr_right"> 
+        </div>
+
+        <section>
+            <div class="promociones_p">
+                <div class="promos_1">
+                    <div class="promo_a" id="prom_a">
+                        <a href="#"><img class="promo_g" src="imagenes/promo1.png" alt=""></a>
+                    </div>
+                    <div class="promo_b" id="prom_b">
+                        <a href="#"><img class="promo_p" src="imagenes/promo2.png" alt=""></a>
+                    </div>
+                    <div class="promo_c" id="prom_c">
+                        <a href="#"><img class="promo_p" src="imagenes/promo3.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="promos_2">
+                    <div class="promo_c" id="prom_c">
+                        <a href="#"><img class="promo_p" src="imagenes/promo4.png" alt=""></a>
+                    </div>
+                    <div class="promo_b" id="prom_b">
+                        <a href="#"><img class="promo_p" src="imagenes/promo5.png" alt=""></a>
+                    </div>
+                    <div class="promo_a" id="prom_a">
+                        <a href="#"><img class="promo_g" src="imagenes/promo6.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="f_dv1">
+            <div class="logo_f">
+                <img class="logo" src="imagenes/logo.svg" alt="">
+                <div class="icon_f">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="slogan_f">
+                <div class="slogan_f-texto">
+                    <span>¡Suscríbete a nuestro newsletter y recibe las mejores ofertas!</span>
+                </div>
+            </div>
+            <div class="susc_f">
+                <form class="suscripcion">
+                    <input type="email" name="email" placeholder="Correo electronico">
+                    <button class="boton_suscribete" type="submit" value="Enviar" onclick="getInputValue2();">Suscribirme</button>
+                </form>
+                <div class="checkbox">
+                    <input type="checkbox"><br>
+                    <span>&nbspHe leido y aceptado los terminos y condiciones.</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="f_dv3">  
+            <div id="a">
+                <h4>Servicio al cliente</h4>
+                <br>
+                <p>Canales de atención</p>
+                <p>Protocolo Delivery</p>
+                <p>Terminos y condiciones</p>
+                <p>Métodos de pago</p>
+                <p>Factura electrónica</p>
+            </div>
+            <div id="b">
+                <h4>Información</h4>
+                <br>
+                <a href="paginas/nosotros.html"><p>Nosotros</p></a>
+                <a href="paginas/nuestrastiendas.html"><p>Nuestras tiendas</p></a>
+                <a href="paginas/comocomprar.html"><p>¿Cómo comprar?</p></a>
+                <a href="paginas/preguntasfrecuentes.html"><p>Preguntas frecuentes</p></a>
+                <a href="paginas/mapadesitio.html"><p>Mapa de sitio</p></a>
+            </div>
+            <div id="c">
+                <h4>Horarios de atención</h4>
+                <br>
+                <p>Lun. - Sáb. de 9:00 am a 6:00pm</p>
+                <p>926&nbsp259&nbsp258</p>
+                <p>servicioalcliente@geekland.com.pe</p>
+                <p>RUC: 20715943971</p>
+                <p>Razón Social: Geekland Perú S.A.C</p>
+            </div>
+            <div id="d" class="whatsapp">
+                <h4>Ventas perzonalizadas</h4>
+                <br>
+                <div class="num">
+                    <div class="whatsapp-icon">
+                        <a href="https://wa.me/51926259258?text=¡Hola%20Geekland!%20necesito%20hacer%20una(s)%20compra(s),%20agradezco%20su%20atención.%20Saludos">
+                            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                            <span>926&nbsp259&nbsp258</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="whatsapp-icon">
+                        <a href="https://wa.me/51982256809?text=¡Hola%20Geekland!%20necesito%20hacer%20una(s)%20compra(s),%20agradezco%20su%20atención.%20Saludos">
+                            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                            <span>982&nbsp256&nbsp809</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="whatsapp-icon">
+                        <a href="https://wa.me/51963878253?text=¡Hola%20Geekland!%20necesito%20hacer%20una(s)%20compra(s),%20agradezco%20su%20atención.%20Saludos">
+                            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                            <span>963&nbsp878&nbsp253</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f_dv4">
+            <p>© 2023 Geekland. Todos los derechos reservados.</p> 
+        </div> 
+    </footer>
+</body>
+<script defer src="js/appMain.js" ></script>
+<script defer src="js/app.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://kit.fontawesome.com/567c1c99c5.js" crossorigin="anonymous"></script>
+</html>
