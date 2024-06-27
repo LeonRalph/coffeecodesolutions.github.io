@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="../css/mediaq.css">
+    <link rel="stylesheet" href="../css/filter.css">
+    <link rel="icon" type="image/png" href="../imagenes/favicon.ico"/>
+    <script src="https://kit.fontawesome.com/567c1c99c5.js" crossorigin="anonymous"></script>
+    <title>Gamer</title>
+</head>
+<body>
+              <!-- Inicio de cabecera -->
+              <header>
+                <div class="cabecera">
+                    <a href="#" class="hamb"><i class="fa-solid fa-bars"></i></a>
+                    <figure>
+                        <a href="../index.html"><img class="logo" src="../imagenes/logo.svg" alt="logo"></a>
+                    </figure>
+                    <div>
+                        <div>
+                            <form class="busqueda">
+                                <img class="lupa" src="../imagenes/busqueda.png" alt="">
+                                <input  type="search" placeholder="Busca en GeekLand" onchange="getInputValue();">
+                            </form>
+                        </div>
+                        <div>
+                            <figure>
+                                <a href="https://www.apple.com/shop/buy-iphone"><button class="boton_apple" type="submit"><img src="../imagenes/apple.png"></button></a>
+                            </figure>
+                            <figure class="iconos_ftc">
+                                <button type="submit">
+                                    <div>
+                                        <img src="../imagenes/corazon_p.png">
+                                        <img src="../imagenes/corazon.png">
+                                    </div>
+                                </button>
+                                <figcaption>
+                                    Favoritos
+                                </figcaption> 
+                            </figure>
+                            <figure class="iconos_ftc">
+                                <button type="submit">
+                                    <a href="../paginas/nuestrastiendas.html">
+                                        <div>
+                                            <img src="../imagenes/tienda_p.png">
+                                            <img src="../imagenes/tienda.png">
+                                        </div>
+                                    </a>
+                                </button>
+                                <figcaption>
+                                    Tiendas
+                                </figcaption> 
+                            </figure>
+                            <figure class="iconos_ftc">
+                                <button>
+                                    <div>
+                                        <img src="../imagenes/carrito_compras_p.png">
+                                        <img src="../imagenes/carrito_compras.png">
+                                    </div>
+                                </button>
+                                <figcaption>
+                                    Compras
+                                </figcaption> 
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- INICIO MENU DE NAVEGACION -->
+                <!-- lista_g es la lista general , lista_p es la lista principal , vinculo_p es el vinculo principal-->
+                <nav class="menu">
+                    <ul class="lista_g">
+                        <li class="lista_p">
+                            <a class="vinculo_p" href="../paginas/audio.html">Audio</a>
+                            <figure>
+                                <img src="../imagenes/abajo_nav.png">
+                                <img src="../imagenes/abajo_nav_p.png">
+                            </figure>
+                            <ul>
+                                <li><a href="../paginas/audio.html">Audifonos</a></li>
+                                <li><a href="../paginas/audio.html">Parlantes</a></li>
+                                <li><a href="../paginas/audio.html">Microfonos</a></li>
+                                <li><a href="../paginas/audio.html">Accesorios de audio</a></li>
+                                <li><a href="../paginas/audio.html">Equipos de sonido</a></li>
+                                <li><a href="../paginas/audio.html">Radios</a></li>
+                            </ul>
+                        </li>
+                        <li class="lista_p">
+                            <a class="vinculo_p" href="../paginas/celularesyaccesorios.html">Celulares</a>
+                            <figure>
+                                <img src="../imagenes/abajo_nav.png">
+                                <img src="../imagenes/abajo_nav_p.png">
+                            </figure>
+                            <ul>
+                                <li><a href="../paginas/celularesyaccesorios.html">Celulares</a></li>
+                                <li><a href="../paginas/celularesyaccesorios.html">Smart Watchs</a></li>
+                                <li><a href="../paginas/celularesyaccesorios.html">Cargadores</a></li>
+                                <li><a href="../paginas/celularesyaccesorios.html">Case y micas</a></li>
+                                <li><a href="../paginas/celularesyaccesorios.html">Soportes</a></li>
+                                <li><a href="../paginas/celularesyaccesorios.html">Cables usb</a></li>
+                            </ul>
+                        </li>
+                        <li class="lista_p">
+                            <a class="vinculo_p" href="../paginas/smarthome.html">Smarthome</a>
+                            <figure>
+                                <img src="../imagenes/abajo_nav.png">
+                                <img src="../imagenes/abajo_nav_p.png">
+                            </figure>
+                            <ul>
+                                <li><a href="../paginas/smarthome.html">Convertidores smart</a></li>
+                                <li><a href="../paginas/smarthome.html">Parlantes inteligentes</a></li>
+                                <li><a href="../paginas/smarthome.html">Camaras de seguridad</a></li>
+                                <li><a href="../paginas/smarthome.html">Iluminacion smart</a></li>
+                                <li><a href="../paginas/smarthome.html">Aspiradoras robot</a></li>
+                            </ul>
+                        </li>
+                        <li class="lista_p">
+                            <a class="vinculo_p" href="../paginas/gamer.html">Gamer</a>
+                            <figure>
+                                <img src="../imagenes/abajo_nav.png">
+                                <img src="../imagenes/abajo_nav_p.png">
+                            </figure>
+                            <ul>
+                                <li><a href="../paginas/gamer.html">Laptor Gamer</a></li>
+                                <li><a href="../paginas/gamer.html">Monitores</a></li>
+                                <li><a href="../paginas/gamer.html">Consolas</a></li>
+                                <li><a href="../paginas/gamer.html">Realidad virtual</a></li>
+                                <li><a href="../paginas/gamer.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li class="lista_p">
+                            <a class="vinculo_p" href="../paginas/computo.html">Computo</a>
+                            <figure>
+                                <img src="../imagenes/abajo_nav.png">
+                                <img src="../imagenes/abajo_nav_p.png">
+                            </figure>
+                            <ul>
+                                <li><a href="../paginas/computo.html">Pc de escritorio</a></li>
+                                <li><a href="../paginas/computo.html">Almacenamiento</a></li>
+                                <li><a href="../paginas/computo.html">Perifericos de computo</a></li>
+                                <li><a href="../paginas/computo.html">Componentes para pc</a></li>
+                                <li><a href="../paginas/computo.html">Impresoras</a></li>
+                                <li><a href="../paginas/computo.html">Software y licencias</a></li>
+                            </ul>
+                        </li>
+                        <li class="lista_p">
+                            <a class="vinculo_p" href="../paginas/movilidad.html">Movilidad</a>
+                            <figure>
+                                <img src="../imagenes/abajo_nav.png">
+                                <img src="../imagenes/abajo_nav_p.png">
+                            </figure>
+                            <ul>
+                                <li><a href="../paginas/movilidad.html">Scooters electricos</a></li>
+                                <li><a href="../paginas/movilidad.html">Bicicletas electricas</a></li>
+                                <li><a href="../paginas/movilidad.html">Motos electricas</a></li>
+                                <li><a href="../paginas/movilidad.html">Repuestos</a></li>
+                                <li><a href="../paginas/movilidad.html">Gps Localizador</a></li>
+                            </ul>
+                        </li>
+                        <li class="lista_p">
+                            <a class="vinculo_p" href="../paginas/fotografiavideo.html">Fotografía</a>
+                            <figure>
+                                <img src="../imagenes/abajo_nav.png">
+                                <img src="../imagenes/abajo_nav_p.png">
+                            </figure>
+                            <ul>
+                                <li><a href="../paginas/fotografiavideo.html">Camaras DLSR</a></li>
+                                <li><a href="../paginas/fotografiavideo.html">Camaras mirrorless</a></li>
+                                <li><a href="../paginas/fotografiavideo.html">Tripoides</a></li>
+                                <li><a href="../paginas/fotografiavideo.html">Estabilizadores</a></li>
+                                <li><a href="../paginas/fotografiavideo.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li class="lista_p">
+                            <a class="vinculo_p" href="../index.html#promociones">Promociones</a>
+                        </li>
+                        <li class="lista_p">
+                            <a class="vinculo_p" href="#d">Contactenos</a>
+                            <figure>
+                                <img src="../imagenes/abajo_nav.png">
+                                <img src="../imagenes/abajo_nav_p.png">
+                            </figure>
+                            <ul>
+                                <li><a href="#">Enviar correo</a></li>
+                                <li><a href="#">Devoluciones</a></li>
+                                <li><a href="../paginas/nuestrastiendas.html">Punto de retiro</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- FIN MENU DE NAVEGACION -->
+            </header><!-- Fin de cabecera -->
+    <main class="maint">
+        <div class="contenedor_sub_index">
+            <div class="contenedor_slide_productos">
+                <h3>Los más agregados al carrito</h3>
+                <div class="slider">
+                    <div class="list">
+                        <div class="item">
+                            <div class="div_lm">
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="div_lm">
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="div_lm">
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="div_lm">
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                                <div class="div_lmc">
+                                    <div>
+                                        <img src="../imagenes/producto1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3>Apple</h3>
+                                        <p>Los AirPods te ofrecen una duración inigualable 3 de 5 horas de audio 4 y hasta 3 horas de conversación 5 con una sola carga.</p>
+                                             <br>
+                                        <p>S/ 200.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+                    <ul class="dots" style="display: none">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="contenedor_productos">
+                <div class="sidebar">
+                    <h3>Gamer</h3>
+                    <div class="filter">
+                        <h3>Categorias</h3>
+                        <div id="btns"></div>
+                    </div>
+                </div>
+                <div class="contant">
+                    <div id="root"></div>
+                </div>
+            </div>   
+        </div>
+    </main>
+    <footer>
+        <div class="f_dv1">
+            <div class="logo_f">
+                <img class="logo" src="../imagenes/logo.svg" alt="">
+                <div class="icon_f">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="slogan_f">
+                <div class="slogan_f-texto">
+                    <span>¡Suscríbete a nuestro newsletter y recibe las mejores ofertas!</span>
+                </div>
+            </div>
+            <div class="susc_f">
+                <form class="suscripcion">
+                    <input type="email" name="email" placeholder="Correo electronico">
+                    <button class="boton_suscribete" type="submit" value="Enviar" onclick="getInputValue2();">Suscribirme</button>
+                </form>
+                <div class="checkbox">
+                    <input type="checkbox"><br>
+                    <span>&nbspHe leido y aceptado los terminos y condiciones.</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="f_dv3">  
+            <div id="a">
+                <h4>Servicio al cliente</h4>
+                <br>
+                <p>Canales de atención</p>
+                <p>Protocolo Delivery</p>
+                <p>Terminos y condiciones</p>
+                <p>Métodos de pago</p>
+                <p>Factura electrónica</p>
+            </div>
+            <div id="b">
+                <h4>Información</h4>
+                <br>
+                <a href="../paginas/nosotros.html"><p>Nosotros</p></a>
+                <a href="../paginas/nuestrastiendas.html"><p>Nuestras tiendas</p></a>
+                <a href="../paginas/comocomprar.html"><p>¿Cómo comprar?</p></a>
+                <a href="../paginas/preguntasfrecuentes.html"><p>Preguntas frecuentes</p></a>
+                <a href="../paginas/mapadesitio.html"><p>Mapa de sitio</p></a>
+            </div>
+            <div id="c">
+                <h4>Horarios de atención</h4>
+                <br>
+                <p>Lun. - Sáb. de 9:00 am a 6:00pm</p>
+                <p>926&nbsp259&nbsp258</p>
+                <p>servicioalcliente@geekland.com.pe</p>
+                <p>RUC: 20715943971</p>
+                <p>Razón Social: Geekland Perú S.A.C</p>
+            </div>
+            <div id="d" class="whatsapp">
+                <h4>Ventas perzonalizadas</h4>
+                <br>
+                <div class="num">
+                    <div class="whatsapp-icon">
+                        <a href="https://wa.me/51926259258?text=¡Hola%20Geekland!%20necesito%20hacer%20una(s)%20compra(s),%20agradezco%20su%20atención.%20Saludos">
+                            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                            <span>926&nbsp259&nbsp258</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="whatsapp-icon">
+                        <a href="https://wa.me/51982256809?text=¡Hola%20Geekland!%20necesito%20hacer%20una(s)%20compra(s),%20agradezco%20su%20atención.%20Saludos">
+                            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                            <span>982&nbsp256&nbsp809</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="whatsapp-icon">
+                        <a href="https://wa.me/51963878253?text=¡Hola%20Geekland!%20necesito%20hacer%20una(s)%20compra(s),%20agradezco%20su%20atención.%20Saludos">
+                            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                            <span>963&nbsp878&nbsp253</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f_dv4">
+            <p>© 2023 Geekland. Todos los derechos reservados.</p> 
+        </div> 
+    </footer>
+</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="../js/app.js"></script>
+    <script defer src="../js/appP.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/filter-ga.js"></script>
+</html>
