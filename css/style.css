@@ -1,0 +1,604 @@
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*General*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+h2 {
+    color: rgb(163, 156, 156);
+    font-size: 20px;
+    padding: 0px 20px;
+    text-align: center;
+}
+.linea_h2_l_r {
+    width: 90%;
+    max-width: 1380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.hr_left,.hr_right {
+    background-color: lightgray;
+    width: 50%;
+    height: 1px;
+}
+
+
+/*Header*/
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+header .cabecera .hamb {
+    display: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+    /*Cabecera*/
+    .cabecera {
+        display: flex;
+        justify-content: space-around;
+        background-color: #1C7CE2;
+        margin: auto;
+    }
+        .logo {
+            width: auto;
+            max-width: 200px;
+            height: 100px;
+            margin: auto;
+            padding: 20px 30px;
+            transition: all 800ms ease-out;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+            transition: all 500ms ease;
+            filter: drop-shadow(0px 0px 5px);
+        }
+        .cabecera div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .busqueda {
+            width: 90%;
+            height: 50px;
+            margin: 0px;
+            padding: 10px;
+        }
+        .busqueda input {
+            width: 100%;
+            height: 50px;
+            color: grey;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 40px;
+            font-size: 18px;
+            box-shadow: 0px 0px 5px gray;
+        }
+        .busqueda input:hover {
+            box-shadow: 0px 0px 8px white;
+        }
+        .busqueda input::placeholder {
+            color: lightgray;
+        }
+        .busqueda input:focus {
+            outline: none;
+        }
+        .lupa {
+            width: 40px;
+            position: absolute;
+            margin-top: 5px;
+            margin-left: 2px;
+        }
+        .boton_apple {
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+            border-radius: 15px;
+            margin: auto;
+            transition: all 800ms ease-out;                            
+        }
+        .boton_apple:hover {
+            transform: scale(1.2);
+            transition: all 500ms ease;
+            box-shadow: 0px 0px 10px white;
+        }
+        .boton_apple img {
+            width: 100px;
+            height: 50px;
+            border-radius: 15px;        
+        }
+        .iconos_ftc {
+            margin: 10px 0px ;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        .iconos_ftc:hover {
+            color: #ffd700;
+            text-shadow: 0px 0px 0px white;
+            filter: drop-shadow(0px 0px 5px);
+        }
+        .iconos_ftc img {
+            width: 40px;
+        }
+        .iconos_ftc div img:first-child {
+            display: none;
+        }
+        .iconos_ftc:hover img:first-child {
+            display: block;
+        }
+        .iconos_ftc:hover img:last-child {
+            display: none;
+        }
+        .iconos_ftc button {
+            background-color: transparent;
+            cursor: pointer;
+        }    
+
+/* Inicio menu de navegacion */ 
+.menu {
+    width: 100%;
+}
+.menu ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+.menu ul.lista_g {
+    width: 100%;
+}
+.menu ul li {
+    float :left;
+    background-color: #000000;
+    border: 1px solid #000000;
+    width: 100%;
+    height: 20px;
+    padding: 10px 5px;
+    font-size: 18px; 
+}
+.menu ul li figure img {
+    width: 15px;
+    float: right;
+    border-radius: 10px;
+    margin-top: -16px;
+}
+.menu ul li figure img:last-child {
+    display: none;
+}
+.lista_p:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.lista_p:hover .vinculo_p {
+    color: #1C7CE2;
+    font-weight: 500; 
+}
+.menu ul li:hover figure img:first-child{
+    display: none;
+}
+.menu ul li:hover figure img:last-child{
+    display: block;
+}
+
+    /*SUB MENU*/
+    .lista_p ul {
+        display: none;
+        position: relative;
+        z-index: 1;
+    }
+    .lista_p ul li {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .menu .lista_g .lista_p:hover ul {
+        display: block;
+        margin: 10px 0px 0px -6px;
+        transition: all 2000ms linear;
+        width: 100%;
+    }
+    .menu .lista_g .lista_p ul li:hover {
+        background-color: #ffffff;
+        color: #1C7CE2;
+    }
+    .menu .lista_g .lista_p ul li:hover a {
+        color: #1C7CE2;
+    }
+
+/*Banner */
+.carrousel {
+    width: 100%;
+    margin: auto;
+    max-width: 1600px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 180px;  
+}
+.carrousel .tamano {
+    width: 700%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+.carrousel .tamano img {
+    width: calc(100% / 7 - 4.4em);
+    max-width: 100vw;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px gray;
+}
+.carrousel .puntos {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    margin: auto;
+    max-height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.carrousel .punto {
+    width: 10px;
+    height: 10px;
+    margin: 0px 10px;
+    max-width: 100%;
+    cursor: pointer;
+    border-radius: 45px;
+    background: gray;
+    box-shadow:  0px 0px 15px #b0b0b0,
+                -0px -0px 15px #ffffff;
+}
+.carrousel .punto.activo {
+    background-color: #1C7CE2;
+    width: 30px;
+    transition: all 500ms ease;
+}
+.carrousel .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.carrousel .buttons button {
+    max-width: 50px;
+    max-height: 50px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+/* 3 carrusel*/
+.carrousel {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.carrousel .tamano3 {
+    width: 400%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    /*padding: 2em;*/
+    border-radius: 45px;
+    background: #ffffff;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+.carrousel .tamano3 div {
+    width: calc(100% / 4 - 4.4em);
+    min-height: 440px;
+    max-width: 1440px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.carrousel .tamano3 picture {
+    width: 17%;
+    min-height: 200px;
+    text-align: justify;
+    padding: 20px;
+    border: gray 1px solid;
+    border-radius: 20px;
+}
+.carrousel .tamano3 picture .img3 {
+    width: 95%;
+    height: 14vh;
+}
+.carrousel .tamano3 picture aside:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+.carrousel .puntos3 {
+    width: 97%;
+    height: 10px;
+    padding: 1em;
+    margin: 1em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+}
+.carrousel .punto3 {
+    width: 20px;
+    height: 20px;
+    margin: 1em 1em 0;
+    cursor: pointer;
+    border-radius: 45px;
+    background: gray;
+}
+.carrousel .punto3.activo3 {
+    background-color: #1C7CE2;
+    width: 40px;
+    transition: all 500ms ease;
+}
+.icon_carrousel3 {
+    width: 30px;
+    height: 2vh;
+}
+
+/* Promociones */
+#promociones {
+    scroll-margin-top: 210px;
+}
+.promociones_p {
+    width: 100%;
+    max-width: 1440px;
+    margin: 15px auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+} 
+.promos_1 {
+    width: auto;
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    height: auto;
+    vertical-align: middle;
+}
+.promos_2 {
+    width: auto;
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    height: auto;
+    vertical-align: middle;
+    }
+.promo_a,.promo_b,.promo_c {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 800ms ease-out;
+}
+.promo_g:hover,.promo_p:hover {
+    transform: scale(1.05);
+    transition: all 500ms ease;
+    box-shadow: 0px 0px 10px gray;
+}
+.promo_g,.promo_p{
+    border-radius: 30px;
+    width: 100%;
+}
+
+/* Inicio del footer */
+footer {
+    background-color: #1C7CE2;
+    width: 100%;
+    color: white;
+}
+footer  hr {
+    width: 97%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 10px auto;
+}
+    .f_dv1,.f_dv2,.f_dv3 {
+        padding: 10px 30px;
+    }
+    .f_dv1 {
+        width: auto;
+        font-size: 20px;
+        font-weight: thin;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        align-items: center;
+    }
+    .f_dv1 .logo {
+        margin: 0;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .f_dv1 .logo_f {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .f_dv1 .icon_f {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        align-items: center;
+        width: 100%;
+        font-size: 35px;
+    }
+    .f_dv1 .icon_f i {
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    .f_dv1 .logo_f,.icon_f {
+        width: auto;
+        vertical-align: middle;
+    }
+    .f_dv1 .slogan_f .slogan_f-texto {
+        width: 75%;
+        font-size: 28px;
+        font-weight: 600;
+        margin: auto;
+    }
+    .f_dv1 .slogan_f,.susc_f {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .icon_f img {
+        width: 30px;
+    }
+    .suscripcion {
+        width: auto;
+        height: 50px;
+        margin: 0px;
+        padding: 10px;
+        display: flex;
+        position: relative;
+    }
+        .suscripcion input {
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 30px;
+            font-size: 20px;
+            color: grey;
+            box-shadow: 0px 0px 5px gray;       
+        }
+        .suscripcion input:hover {
+            box-shadow: 0px 0px 8px white;
+        }
+        .suscripcion input::placeholder {
+            color: lightgray;
+        }
+        .suscripcion input:focus {
+            outline: none;
+        }
+        .boton_suscribete {
+            position: absolute;
+            right: 0;
+            background-color: #000000;
+            color: #ffd700;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 10px 10px 10px 10px;
+            width: 140px;
+            height: 50px;
+            transition: all 500ms ease;
+        }
+        .boton_suscribete:hover {
+            color: #ffffff;
+            transition: all 500ms ease;
+            box-shadow: 0px 0px 15px #ffffff;
+        }
+        .boton_suscribete img {
+            width: 90px;
+            height: 40px;
+        }
+        .susc_f .checkbox input {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+        .checkbox {
+            display: flex;
+            padding-left: 20px;
+            text-align: left;
+        }
+    .f_dv2 {
+        width: auto;
+        font-size: 22px;
+        font-weight: thin;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: auto;
+        vertical-align: middle;
+    }
+    .f_dv3 {
+        width: auto;
+        font-size: 22px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: auto;
+        vertical-align: middle;
+        padding-bottom: 30px;
+    }
+    .f_dv3 div a {
+        transition: all 500ms ease-out;
+    }
+    .f_dv3 div p:hover {
+        transform: scale(1.05) translateX(5px);
+
+        transition: all 500ms ease;
+        filter: drop-shadow(0px 0px 5px);
+    }
+    .f_dv3 .whatsapp .num {
+        font-size: 30px;
+        padding-bottom: 10px;
+        transition: all 500ms ease-out;
+    }
+    .f_dv3 .whatsapp .num:hover {
+        transform: scale(1.1) translateX(10px);
+
+        transition: all 500ms ease;
+        filter: drop-shadow(0px 0px 5px);
+    }
+    .f_dv3 div p {
+        padding-bottom: 10px;
+    }
+    .f_dv4 {
+    background-color: #000000;
+    text-align: center;
+    color: #ffd700;
+    padding: 10px 0px;
+    } 
+/* Fin del footer */
